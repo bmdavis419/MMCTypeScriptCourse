@@ -1,24 +1,28 @@
 "use strict";
-// Console Log
-console.log("Hello world!");
-// vars
-var strFirstVar = "var";
-console.log(strFirstVar);
-// Types
-var strName = "Ben";
-var numAge = "19";
-var boolIsInstructor = true;
-// User Input
-// Import the prompt module
-var inputSource = require("prompt-sync")();
-strName = inputSource("Enter a new name: ");
-console.log(strName);
-// Condidtionals
-if (strName.length > 5) {
-    console.log("The name you entered is long");
+// arrays
+var strDays = ["Monday", "Tuesday", "Wednesday"];
+var numDigits = [1, 2, 3, 4, 5];
+console.log(numDigits[2]);
+// for loops
+for (var i = 0; i < strDays.length; i++) {
+    console.log(strDays[i]);
 }
-else {
-    console.log("The name you entered is short");
+// while loops
+var counter = 1;
+while (counter < 10) {
+    counter += counter;
 }
-// Embedded expressons in strings
-console.log("The name you entered was " + strName + ", it has a length of " + strName.length);
+console.log(counter);
+// functions
+function printName(name) {
+    console.log("Your name is: " + name);
+}
+printName("Ben");
+var printNameAnnon = function (name) {
+    console.log("Your name is " + name);
+};
+printName("Ben2");
+// foreach loops
+strDays.forEach(function (day) {
+    console.log(day + "s");
+});

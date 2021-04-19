@@ -1,41 +1,32 @@
-// Console Log
-console.log("Hello world!");
+// arrays
+let strDays = ["Monday", "Tuesday", "Wednesday"];
+let numDigits: number[] = [1, 2, 3, 4, 5];
+console.log(numDigits[2]);
 
-// vars
-let strFirstVar = "var";
-console.log(strFirstVar);
-
-// Types
-let strName: string = "Ben";
-let numAge = 19;
-let boolIsInstructor = true;
-let strAge: string = numAge.toString();
-let numStrongTypedAge: number = Number(strAge);
-
-// expressions
-numAge = numAge + 1;
-
-// User Input
-// Import the prompt module
-const inputSource = require("prompt-sync")();
-strName = inputSource("Enter a new name: ");
-console.log(strName);
-
-// Condidtionals
-if (strName.length > 5) {
-	console.log("The name you entered is long");
-} else {
-	console.log("The name you entered is short");
+// for loops
+for (let i = 0; i < strDays.length; i++) {
+	console.log(strDays[i]);
 }
 
-// conditional with statement
-if (numAge % 2 == 0) {
-	console.log("Your age is even");
-} else {
-	console.log("Your age is odd");
+// while loops
+let counter = 1;
+while (counter < 10) {
+	counter += counter;
 }
+console.log(counter);
 
-// Embedded expressons in strings
-console.log(
-	`The name you entered was ${strName}, it has a length of ${strName.length}`
-);
+// functions
+function printName(name: string) {
+	console.log(`Your name is: ${name}`);
+}
+printName("Ben");
+
+let printNameAnnon = (name: string) => {
+	console.log(`Your name is ${name}`);
+};
+printName("Ben2");
+
+// foreach loops
+strDays.forEach((day) => {
+	console.log(day + "s");
+});
