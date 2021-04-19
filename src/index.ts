@@ -9,6 +9,8 @@ console.log(strFirstVar);
 let strName: string = "Ben";
 let numAge = 19;
 let boolIsInstructor = true;
+let strAge: string = numAge.toString();
+let numStrongTypedAge: number = Number(strAge);
 
 // expressions
 numAge = numAge + 1;
@@ -24,6 +26,13 @@ if (strName.length > 5) {
 	console.log("The name you entered is long");
 } else {
 	console.log("The name you entered is short");
+}
+
+// conditional with statement
+if (numAge % 2 == 0) {
+	console.log("Your age is even");
+} else {
+	console.log("Your age is odd");
 }
 
 // Embedded expressons in strings
