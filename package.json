@@ -1,0 +1,27 @@
+{
+  "name": "mmctypescriptcourse",
+  "version": "1.0.0",
+  "description": "Tutorial for MMC Scholars Project Group.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmdavis419/MMCTypeScriptCourse.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "Tutorial",
+    "MMC"
+  ],
+  "author": "Benjamin Davis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bmdavis419/MMCTypeScriptCourse/issues"
+  },
+  "homepage": "https://github.com/bmdavis419/MMCTypeScriptCourse#readme",
+  "dependencies": {
+    "ts": "^0.2.2"
+  }
+}
