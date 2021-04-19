@@ -1,32 +1,59 @@
-// arrays
-let strDays = ["Monday", "Tuesday", "Wednesday"];
-let numDigits: number[] = [1, 2, 3, 4, 5];
-console.log(numDigits[2]);
-
-// for loops
-for (let i = 0; i < strDays.length; i++) {
-	console.log(strDays[i]);
+// interfaces
+interface person {
+	name: string;
+	age: number;
+	attendsOSU: boolean;
 }
 
-// while loops
-let counter = 1;
-while (counter < 10) {
-	counter += counter;
-}
-console.log(counter);
-
-// functions
-function printName(name: string) {
-	console.log(`Your name is: ${name}`);
-}
-printName("Ben");
-
-let printNameAnnon = (name: string) => {
-	console.log(`Your name is ${name}`);
+// object
+let firstPerson: person = {
+	name: "Ben",
+	age: 19,
+	attendsOSU: true,
 };
-printName("Ben2");
+console.log(firstPerson.name);
 
-// foreach loops
-strDays.forEach((day) => {
-	console.log(day + "s");
+// array of objects
+let people: person[] = [
+	firstPerson,
+	{
+		name: "Ben2",
+		age: 12,
+		attendsOSU: false,
+	},
+];
+console.log(people[1].attendsOSU);
+
+// foreach on an object
+people.forEach((p) => {
+	console.log(`${p.name} is ${p.age}.`);
+	if (p.attendsOSU) {
+		console.log("They attend osu");
+	} else {
+		console.log("They do not attend osu");
+	}
 });
+
+// modules
+import { printInfo, person2 } from "./person";
+let people2: person2[] = [
+	{
+		firstName: "Ben",
+		lastName: "Davis",
+		age: 19,
+		birthdayMonth: 4,
+	},
+	{
+		firstName: "John",
+		lastName: "Smith",
+		age: 18,
+		birthdayMonth: 3,
+	},
+	{
+		firstName: "Jane",
+		lastName: "Doe",
+		age: 28,
+		birthdayMonth: 9,
+	},
+];
+people2.forEach(printInfo);

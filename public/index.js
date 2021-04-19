@@ -1,28 +1,52 @@
 "use strict";
-// arrays
-var strDays = ["Monday", "Tuesday", "Wednesday"];
-var numDigits = [1, 2, 3, 4, 5];
-console.log(numDigits[2]);
-// for loops
-for (var i = 0; i < strDays.length; i++) {
-    console.log(strDays[i]);
-}
-// while loops
-var counter = 1;
-while (counter < 10) {
-    counter += counter;
-}
-console.log(counter);
-// functions
-function printName(name) {
-    console.log("Your name is: " + name);
-}
-printName("Ben");
-var printNameAnnon = function (name) {
-    console.log("Your name is " + name);
+Object.defineProperty(exports, "__esModule", { value: true });
+// object
+var firstPerson = {
+    name: "Ben",
+    age: 19,
+    attendsOSU: true,
 };
-printName("Ben2");
-// foreach loops
-strDays.forEach(function (day) {
-    console.log(day + "s");
+console.log(firstPerson.name);
+// array of objects
+var people = [
+    firstPerson,
+    {
+        name: "Ben2",
+        age: 12,
+        attendsOSU: false,
+    },
+];
+console.log(people[1].attendsOSU);
+// foreach on an object
+people.forEach(function (p) {
+    console.log(p.name + " is " + p.age + ".");
+    if (p.attendsOSU) {
+        console.log("They attend osu");
+    }
+    else {
+        console.log("They do not attend osu");
+    }
 });
+// modules
+var person_1 = require("./person");
+var people2 = [
+    {
+        firstName: "Ben",
+        lastName: "Davis",
+        age: 19,
+        birthdayMonth: 4,
+    },
+    {
+        firstName: "John",
+        lastName: "Smith",
+        age: 18,
+        birthdayMonth: 3,
+    },
+    {
+        firstName: "Jane",
+        lastName: "Doe",
+        age: 28,
+        birthdayMonth: 9,
+    },
+];
+people2.forEach(person_1.printInfo);
