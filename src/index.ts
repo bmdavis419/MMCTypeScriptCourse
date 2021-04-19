@@ -7,8 +7,11 @@ console.log(strFirstVar);
 
 // Types
 let strName: string = "Ben";
-let numAge = "19";
+let numAge = 19;
 let boolIsInstructor = true;
+
+// expressions
+numAge = numAge + 1;
 
 // User Input
 // Import the prompt module
