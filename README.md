@@ -1,2 +1,2 @@
 # MMCTypeScriptCourse
-A 14 week MMC Scholars project group, built to teach the basics of TypeScript.
+A 14 week MMC Scholars project group, built to teach the basics of TypeScript, NextJS, Firebase Auth, and TailwindCSS.
