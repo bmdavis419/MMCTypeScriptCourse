@@ -1,35 +1,35 @@
 {
-  "name": "mmctypescriptcourse",
-  "version": "1.0.0",
-  "description": "Tutorial for MMC Scholars Project Group.",
-  "main": "index.js",
-  "scripts": {
-    "start": "ts-node public/app.js",
-    "build": "tsc -p .",
-    "dev": "concurrently \"tsc -w\" \"nodemon public/index.js\"" 
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bmdavis419/MMCTypeScriptCourse.git"
-  },
-  "keywords": [
-    "TypeScript",
-    "Tutorial",
-    "MMC"
-  ],
-  "author": "Benjamin Davis",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bmdavis419/MMCTypeScriptCourse/issues"
-  },
-  "homepage": "https://github.com/bmdavis419/MMCTypeScriptCourse#readme",
-  "dependencies": {
-    "concurrently": "^6.0.2",
-    "nodemon": "^2.0.7",
-    "prompt-sync": "^4.2.0",
-    "ts": "^0.2.2"
-  },
-  "devDependencies": {
-    "@types/node": "^14.14.41"
-  }
+	"name": "mmctypescriptcourse",
+	"version": "1.0.0",
+	"description": "Tutorial for MMC Scholars Project Group.",
+	"main": "index.js",
+	"scripts": {
+		"start": "node build/index.js",
+		"build": "tsc -p .",
+		"dev": "concurrently \"tsc -w\" \"nodemon build/index.js\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bmdavis419/MMCTypeScriptCourse.git"
+	},
+	"keywords": [
+		"TypeScript",
+		"Tutorial",
+		"MMC"
+	],
+	"author": "Benjamin Davis",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/bmdavis419/MMCTypeScriptCourse/issues"
+	},
+	"homepage": "https://github.com/bmdavis419/MMCTypeScriptCourse#readme",
+	"dependencies": {
+		"concurrently": "^6.0.2",
+		"nodemon": "^2.0.7",
+		"prompt-sync": "^4.2.0",
+		"ts": "^0.2.2"
+	},
+	"devDependencies": {
+		"@types/node": "^14.14.41"
+	}
 }

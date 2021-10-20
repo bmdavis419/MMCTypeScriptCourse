@@ -103,7 +103,12 @@ dist
 # TernJS port file
 .tern-port
 
+<<<<<<< HEAD
 # remove compiled js
 ./public
 public/
 public
+=======
+# build
+build/
+>>>>>>> week1
