@@ -21,8 +21,7 @@ numAge = numAge + 1;
 
 // User Input
 // Import the prompt module
-const inputSource = require("prompt-sync")();
-strName = inputSource("Enter a new name: ");
+// const inputSource = require("prompt-sync")();
 console.log(strName);
 
 // Condidtionals
